@@ -3,9 +3,10 @@ let modal = document.getElementById('modal');
 let closeIcon = document.getElementById('closeIcon');
 
 function form01() {
-    let answer = document.getElementById('answer').value;
+    let lodgeAnswer = document.getElementById('answer').value;
+    lodgeAnswer = lodgeAnswer.toLowerCase();
 
-    if(answer == 'good') {
+    if(lodgeAnswer == 'union station') {
         window.location.href = 'page04.html';
     } else {
         //window.location.href = 'page03.html';
