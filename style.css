@@ -1,0 +1,53 @@
+body {
+    padding: 2%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.paragraphContainer {
+    margin: auto;
+    margin-top: 50%;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.buttonLink {
+    transition: all 0.3s;
+    font-size: 1.1rem !important;
+}
+
+.buttonLink:hover {
+    box-shadow: 1px 1px 5px grey;
+    transition: all 0.3s;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer input {
+    padding: 1%;
+    margin-left: 0.5%;
+}
+
+.backContainer {
+    margin-top: 50%;
+}
+
+@media(min-width: 992px) {
+    .paragraphContainer {
+        margin-top: 15%;
+    }
+}
