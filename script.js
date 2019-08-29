@@ -27,9 +27,20 @@ function unionQuestion() {
     }
 }
 
+function veniceQuestion() {
+    let veniceAnswer = document.getElementById('veniceAnswer').value;
 
-close.onclick = function() {
+    if(veniceAnswer == 'car3') {
+        window.location.href = 'page10.html';
+    } else {
+        modal.style.display = 'block';
+    }
+}
+
+
+closeIcon.onclick = function() {
     modal.style.display = 'none';
+    console.log('HEEEEEEEEY !!!');
 }
 
 window.onclick = function(event) {

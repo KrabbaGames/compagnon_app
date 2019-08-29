@@ -81,6 +81,20 @@ h1, h2 {
     cursor: pointer;
   }
 
+  .imageGallery {
+      max-height: 50vh;
+      overflow: auto;
+  }
+
+  .galleryPic {
+      transition : all 0.5s;
+  }
+
+  .galleryPic:hover {
+      box-shadow: 1px 1px 5px grey;
+      transition: all 0.5s;
+  }
+
 @media(min-width: 992px) {
     .paragraphContainer {
         margin-top: 15%;
