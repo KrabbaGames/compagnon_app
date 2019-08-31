@@ -114,6 +114,7 @@ h1, h2 {
   }
 
   #countdown {
+      position: relative;
       margin: auto;
       padding: 0;
       width: 70px;
@@ -122,6 +123,10 @@ h1, h2 {
       font-weight: bold;
       border: 4px solid rgb(238, 0, 0);
       border-radius: 50px;
+  }
+
+  #countdown svg {
+      position: absolute;
   }
 
 @media(min-width: 992px) {

@@ -50,6 +50,7 @@ function veniceQuestion() {
             }
             cpt--;
         }, 1000);
+        document.getElementById('countdown').textContent = '';
 
     }
 }
