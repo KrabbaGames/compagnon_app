@@ -2,7 +2,7 @@
 let modal = document.getElementById('modal');
 let closeIcon = document.getElementById('closeIcon');
 
-function form01() {
+function lodgeQuestion() {
     let lodgeAnswer = document.getElementById('answer').value;
     lodgeAnswer = lodgeAnswer.toLowerCase();
 
@@ -52,6 +52,32 @@ function veniceQuestion() {
         }, 1000);
         document.getElementById('countdown').textContent = '';
 
+    }
+}
+
+function koreaQuestion() {
+    let koreaAnswer = document.getElementById('koreaAnswer').value;
+    koreaAnswer = koreaAnswer.toLowerCase();
+
+    if(koreaAnswer == 'griffith observatory') {
+        window.location.href = 'page12.html';
+    } else {
+        //window.location.href = 'page06.html';
+
+        modal.style.display = 'block';
+    }
+}
+
+function griffithQuestion() {
+    let griffithAnswer = document.getElementById('griffithAnswer').value;
+    griffithAnswer = griffithAnswer.toLowerCase();
+
+    if(griffithAnswer == 'scenario') {
+        window.location.href = 'page16.html';
+    } else {
+        //window.location.href = 'page06.html';
+
+        modal.style.display = 'block';
     }
 }
 
