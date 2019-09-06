@@ -30,11 +30,11 @@ function unionQuestion() {
     }
 }
 
-function veniceQuestion() {
-    let veniceAnswer = document.getElementById('veniceAnswer').value;
+function veniceQuestion(answer) {
+    
     let blockWindow = document.getElementById('blockWindow');
 
-    if(veniceAnswer == 'car3') {
+    if(answer == 3) {
         window.location.href = '6_pre_korea.html';
     } else {
         modal.style.display = 'block';
