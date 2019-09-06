@@ -22,7 +22,7 @@ function unionQuestion() {
     console.log(unionAnswer);
 
     if(unionAnswer == 'venice beach') {
-        window.location.href = 'page_pre_venice.html';
+        window.location.href = '4_pre_venice.html';
     } else {
         //window.location.href = 'page06.html';
 
@@ -73,7 +73,7 @@ function griffithQuestion() {
     griffithAnswer = griffithAnswer.toLowerCase();
 
     if(griffithAnswer == 'scenario') {
-        window.location.href = '10_engame.html';
+        window.location.href = '10_endgame.html';
     } else {
         //window.location.href = 'page06.html';
 
