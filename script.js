@@ -6,7 +6,7 @@ function lodgeQuestion() {
     let lodgeAnswer = document.getElementById('answer').value;
     lodgeAnswer = lodgeAnswer.toLowerCase();
 
-    if(lodgeAnswer == 'union station') {
+    if(lodgeAnswer == 'union station' || lodgeAnswer == 'union station ') {
         window.location.href = '2_pre_union.html';
     } else {
         //window.location.href = 'page03.html';
@@ -21,7 +21,7 @@ function unionQuestion() {
     unionAnswer = unionAnswer.toLowerCase();
     console.log(unionAnswer);
 
-    if(unionAnswer == 'venice beach') {
+    if(unionAnswer == 'venice beach' || unionAnswer == 'venice beach ') {
         window.location.href = '4_pre_venice.html';
     } else {
         //window.location.href = 'page06.html';
@@ -34,7 +34,7 @@ function veniceQuestion(answer) {
     
     let blockWindow = document.getElementById('blockWindow');
 
-    if(answer == 3) {
+    if(answer == 3) {                               // Changer le numéro pour changer la bonne voiture (entre 1 et 15)
         window.location.href = '6_pre_korea.html';
     } else {
         modal.style.display = 'block';
@@ -59,7 +59,7 @@ function koreaQuestion() {
     let koreaAnswer = document.getElementById('koreaAnswer').value;
     koreaAnswer = koreaAnswer.toLowerCase();
 
-    if(koreaAnswer == 'griffith observatory') {
+    if(koreaAnswer == 'griffith observatory' || koreaAnswer == 'griffith observatory ') {
         window.location.href = '8_pre_griffith.html';
     } else {
         //window.location.href = 'page06.html';
@@ -72,7 +72,7 @@ function griffithQuestion() {
     let griffithAnswer = document.getElementById('griffithAnswer').value;
     griffithAnswer = griffithAnswer.toLowerCase();
 
-    if(griffithAnswer == 'scenario') {
+    if(griffithAnswer == 'scenario' || griffithAnswer == 'scenario ') {
         window.location.href = '10_endgame.html';
     } else {
         //window.location.href = 'page06.html';
