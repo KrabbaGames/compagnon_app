@@ -39,7 +39,7 @@ function veniceQuestion(answer) {
     } else {
         modal.style.display = 'block';
         blockWindow.style.display = 'block';
-        let cpt = 10;
+        let cpt = 30;
         let x = setInterval(function() {
             document.getElementById('countdown').textContent = cpt;
             
