@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Scene 03</title>
+    <title>Scene 3</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../style.css">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1>Scène 3</h1>
+    <h1>Scene 3</h1>
     <h2>Venice Beach</h2>
     <div class="container-fluid row no-gutters mt-5 mb-2">
         <div class="col-0 col-lg-4"></div>
@@ -37,7 +37,9 @@
         <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car15.jpg" alt="car15" onclick="veniceQuestion(15)">
     </div>
 
-    <p class="paragraph mb-2">Which car to follow?</p>
+    <p class="paragraph mb-2">Which car will you follow? Click on the right picture.
+        Be careful, if you choose the wrong one, you will lose time!
+    </p>
 
     
     <div id="modal" class="modal">
@@ -48,8 +50,8 @@
                     <img src="../pictures/icons/smiley_bad.svg">
                 </div>
                 <div class="col-12 col-md-8">
-                    <h1>Perdu...</h1>
-                    <h2>Ooh, quand même...</h2>
+                    <h1>Wrong!</h1>
+                    <h2>You shouldn't follow a stranger's car...</h2>
                 </div>
                 <div class="col-12 col-md-2 d-flex justify-content-center">
                     <img src="../pictures/icons/smiley_bad.svg">
@@ -66,7 +68,7 @@
             <div class="col-4 col-md-5"></div>
         </div>
 
-        <p class="col-12 mt-5">Une mauvaise réponse entraine une pénalité !</p>
+        <p class="col-12 mt-5">Time penalty</p>
         <div class="col-12 d-flex justify-content-center align-items-center position-relative">
             <div id="countdown" class="text-center pt-3">
             </div>

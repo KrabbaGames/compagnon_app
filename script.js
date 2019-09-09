@@ -34,7 +34,7 @@ function veniceQuestion(answer) {
     
     let blockWindow = document.getElementById('blockWindow');
 
-    if(answer == 3) {                               // Changer le numéro pour changer la bonne voiture (entre 1 et 15)
+    if(answer == 9) {                               // Changer le numéro pour changer la bonne voiture (entre 1 et 15)
         window.location.href = '6_pre_korea.html';
     } else {
         modal.style.display = 'block';
