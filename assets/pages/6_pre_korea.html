@@ -10,15 +10,37 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="victoryPage">
     <h1>Well played!</h1>
     <h2>Show this message to your teacher.</h2>
+    <div class="container-fluid no-gutters row mt-5">
+        <div class=" col-2 col-md-5"></div>
+        <svg class="col-8 col-md-2 succesDraw" viewBox="0 0 100 100">
+            <circle cx="50" cy="45" r="40" fill="white" stroke="black" stroke-width="5px"></circle>
+            <path id="topPath" d="M 15 30 Q 50 10 85 30" stroke="none" fill="none"></path>
+            <text font-family="Modak" font-size="1.5rem" fill="yellow" stroke="red">
+                <textPath href="#topPath">
+                    SCENE
+                </textPath>
+            </text>
+
+            <text x="30" y="70" font-family="Modak" font-size="4.5rem" fill="red" stroke="black">3</text>
+
+            <path id="bottomPath" d="M0 65 Q 50 100 96 65" stroke="none" fill="none"></path>
+            <text font-family="Modak" font-size="1.5rem" fill="yellow" stroke="red">
+                <textPath href="#bottomPath">
+                    ACHIEVED
+                </textPath>
+            </text>
+        </svg>
+        <div class="col-2 col-md-5"></div>
+    </div>
     <div class="paragraphContainer">
         <p class="paragraph">When you have received "Scene 4", click here:</p>
     </div>
 
     <div class="buttonContainer">
-        <a role="button" class="btn btn-primary buttonLink" href="7_korea.html">Scene 4, let's go!</a>
+        <a role="button" class="btn btn-warning buttonLink" href="7_korea.html">Scene 4, let's go!</a>
     </div>
 
     <script src="../../script.js"></script>

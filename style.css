@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lacquer|Carter+One|Modak&display=swap');
 
 
 body {
@@ -9,9 +9,14 @@ h1, h2 {
     text-align: center;
 }
 
+.victoryPage {
+    background-color: rgb(59, 96, 219);
+    color: white;
+}
+
 .paragraphContainer {
     margin: auto;
-    margin-top: 50%;
+    margin-top: 10%;
 }
 
 .paragraph {
@@ -84,6 +89,10 @@ h1, h2 {
     cursor: pointer;
   }
 
+  .successDraw {
+      padding-top: 100%;
+  }
+
   .lost {
       font-family: 'Lacquer', sans-serif;
       border: 3px solid black;
@@ -146,8 +155,18 @@ h1, h2 {
       position: absolute;
   }
 
+  .winTitle {
+      font-family: 'Modak';
+      font-size: 3.5rem;
+      color: yellow;
+  }
+
+  .winTitle + h2 {
+      color: yellow;
+  }
+
 @media(min-width: 992px) {
     .paragraphContainer {
-        margin-top: 15%;
+        margin-top: 5%;
     }
 }
