@@ -31,6 +31,8 @@ function unionQuestion() {
 }
 
 function veniceQuestion(answer) {
+
+    console.log("Length : " + document.getElementById('path').getTotalLength());
     
     let blockWindow = document.getElementById('blockWindow');
 
@@ -53,6 +55,7 @@ function veniceQuestion(answer) {
         document.getElementById('countdown').textContent = '';
 
     }
+
 }
 
 function koreaQuestion() {
