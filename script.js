@@ -31,15 +31,17 @@ function unionQuestion() {
 }
 
 function veniceQuestion(answer) {
+
+    console.log("Length : " + document.getElementById('path').getTotalLength());
     
     let blockWindow = document.getElementById('blockWindow');
 
-    if(answer == 3) {                               // Changer le numéro pour changer la bonne voiture (entre 1 et 15)
+    if(answer == 9) {                               // Changer le numéro pour changer la bonne voiture (entre 1 et 15)
         window.location.href = '6_pre_korea.html';
     } else {
         modal.style.display = 'block';
         blockWindow.style.display = 'block';
-        let cpt = 10;
+        let cpt = 30;
         let x = setInterval(function() {
             document.getElementById('countdown').textContent = cpt;
             
@@ -53,6 +55,7 @@ function veniceQuestion(answer) {
         document.getElementById('countdown').textContent = '';
 
     }
+
 }
 
 function koreaQuestion() {
