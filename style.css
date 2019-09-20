@@ -160,6 +160,30 @@ h1, h2 {
       color: yellow;
   }
 
+  #metroMap {
+      position: relative;
+      cursor: crosshair;
+  }
+
+  #zoom {
+      width: 200px;
+      height: 200px;
+      display: none;
+      background-color: white;
+      position: absolute;
+      border: 1px solid black;
+      border-radius: 50%;
+      overflow:hidden;
+  }
+
+  #zoomedPicture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1000%;
+      height: 1000%;
+  }
+
   .countdownPath {
       position: absolute;
       transform: rotate(90deg);
