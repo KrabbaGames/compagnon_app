@@ -105,15 +105,15 @@ function zoom() {
         let offsetX = (viewPortOffset.left / window.innerWidth) * 100;
         let offsetY = ((viewPortOffset.top + window.scrollY) / window.innerHeight) * 100;
 
-        let posX = vpX - offsetX - 2;
-        let posY = vpY - offsetY - 3;
+        let posX = vpX - offsetX - 4;
+        let posY = vpY - offsetY - 7;
 
         document.getElementById('zoom').style.display = 'block';
         document.getElementById('zoom').style.left = vpX + 2 + '%';
         document.getElementById('zoom').style.top = vpY + '%';
 
-        document.getElementById('zoomedPicture').style.left = -(posX * 21.3) + '%';
-        document.getElementById('zoomedPicture').style.top = -((posY * 9.3)) + '%';
+        document.getElementById('zoomedPicture').style.left = -(posX * 12.8) + '%';
+        document.getElementById('zoomedPicture').style.top = -((posY * 5.6)) + '%';
     }
 
 }

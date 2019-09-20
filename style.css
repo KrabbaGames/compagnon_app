@@ -180,8 +180,8 @@ h1, h2 {
       position: absolute;
       top: 0;
       left: 0;
-      width: 1000%;
-      height: 1000%;
+      width: 600%;
+      height: 600%;
   }
 
   .countdownPath {
@@ -206,5 +206,9 @@ h1, h2 {
 @media(min-width: 992px) {
     .paragraphContainer {
         margin-top: 5%;
+    }
+
+    .unionBody {
+        padding-bottom: 18vh;
     }
 }
