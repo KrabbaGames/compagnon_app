@@ -163,6 +163,9 @@ h1, h2 {
   #metroMap {
       position: relative;
       cursor: crosshair;
+      min-height: 0;
+      min-width: 0;
+      border: 5px solid black;
   }
 
   #zoom {
