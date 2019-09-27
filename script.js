@@ -1,5 +1,28 @@
-let modal = document.getElementById('modal');
-let closeIcon = document.getElementById('closeIcon');
+const modal = document.getElementById('modal');
+const closeIcon = document.getElementById('closeIcon');
+
+function blockWindow(count) {
+
+    const blockWindow = document.getElementById('blockWindow');
+    
+    let style = document.createElement('style');
+    document.head.appendChild(style);
+    style.sheet.insertRule(`.countdownPath path {animation: dash ${count}s linear forwards}`);
+
+    modal.style.display = 'block';
+        blockWindow.style.display = 'block';
+        let x = setInterval(function () {
+            document.getElementById('countdown').textContent = count;
+
+
+            if (count == 0) {
+                clearInterval(x);
+                blockWindow.style.display = 'none';
+            }
+            count--;
+        }, 1000);
+        document.getElementById('countdown').textContent = '';
+}
 
 function lodgeQuestion() {
     let lodgeAnswer = document.getElementById('answer').value;
@@ -8,50 +31,29 @@ function lodgeQuestion() {
     if (lodgeAnswer == 'union station' || lodgeAnswer == 'union station ') {
         window.location.href = '2_pre_union.html';
     } else {
-        //window.location.href = 'page03.html';
-
         modal.style.display = 'block';
-
     }
 }
 
 function unionQuestion() {
     let unionAnswer = document.getElementById('unionAnswer').value;
     unionAnswer = unionAnswer.toLowerCase();
-    console.log(unionAnswer);
 
     if (unionAnswer == 'venice beach' || unionAnswer == 'venice beach ') {
         window.location.href = '4_pre_venice.html';
     } else {
-        //window.location.href = 'page06.html';
-
         modal.style.display = 'block';
     }
 }
 
 function veniceQuestion(answer) {
 
-    console.log("Length : " + document.getElementById('path').getTotalLength());
-
-    let blockWindow = document.getElementById('blockWindow');
-
     if (answer == 9) { // Changer le numéro pour changer la bonne voiture (entre 1 et 15)
         window.location.href = '6_pre_korea.html';
     } else {
-        modal.style.display = 'block';
-        blockWindow.style.display = 'block';
-        let cpt = 30;
-        let x = setInterval(function () {
-            document.getElementById('countdown').textContent = cpt;
-
-
-            if (cpt == 0) {
-                clearInterval(x);
-                blockWindow.style.display = 'none';
-            }
-            cpt--;
-        }, 1000);
-        document.getElementById('countdown').textContent = '';
+        
+        window.location.hash = 'pty';
+        this.blockWindow(30); // Changer la valeur pour modifier le temps de pénalité (en secondes)
 
     }
 
@@ -64,8 +66,6 @@ function koreaQuestion() {
     if (koreaAnswer == 'griffith observatory' || koreaAnswer == 'griffith observatory ') {
         window.location.href = '8_pre_griffith.html';
     } else {
-        //window.location.href = 'page06.html';
-
         modal.style.display = 'block';
     }
 }
@@ -77,8 +77,6 @@ function griffithQuestion() {
     if (griffithAnswer == 'scenario' || griffithAnswer == 'scenario ') {
         window.location.href = '10_endgame.html';
     } else {
-        //window.location.href = 'page06.html';
-
         modal.style.display = 'block';
     }
 }
@@ -120,4 +118,14 @@ function zoom() {
 
 function clearZoom() {
     document.getElementById('zoom').style.display = 'none';
+}
+
+function pageLoad() {
+        if(window.location.hash == '#pty') {
+            alert('Nice try you smart one!');
+            this.blockWindow(40); // Changer la valeur pour modifier le temps de pénalité (en secondes)
+        } else {
+            console.log('Welcome good sir.');
+            console.log('(if you removed the hash, congrats, you\'re a goddamn genius! Geniuses aren\'t meant to wait anyway...');
+        } 
 }

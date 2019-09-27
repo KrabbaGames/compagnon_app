@@ -192,7 +192,7 @@ h1, h2 {
   .countdownPath path {
       stroke-dasharray: 157.11;
       stroke-dashoffset: 0;
-      animation: dash 30s linear forwards;
+      /*animation: dash 30s linear forwards;*/
   }
 
   @keyframes dash {
