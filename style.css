@@ -1,17 +1,110 @@
 @import url('https://fonts.googleapis.com/css?family=Lacquer|Carter+One|Modak&display=swap');
 
+@font-face {
+    font-family: 'old typewriter';
+    src: url('assets/fonts/old_typewriter/Oldtypewriter.ttf');
+}
+
+@font-face {
+    font-family: 'myriad pro condensed';
+    src: url('assets/fonts/myriad_pro/MyriadPro-Cond.otf');
+}
+
+@font-face {
+    font-family: 'myriad pro bold condensed';
+    src: url('assets/fonts/myriad_pro/MyriadPro-BoldCond.otf');
+}
+
 
 body {
-    padding: 2%;
+    padding-top: 5%;
+    color: white !important;
+    background-image: url('assets/pictures/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'old typewriter';
+    font-size: 3rem !important;
+    margin-top: 4% !important;
+    margin-bottom: 2% !important;
+}
+
+h2 {
+    font-family: 'old typewriter';
+    font-size: 1.5rem !important;
+}
+
+.homepage h2 .bold {
+    color: gold;
+    font-family: 'myriad pro bold condensed';
+}
+
+.homepage h2 {
+    font-family: 'myriad pro condensed';
+    font-size: 1.3rem !important;
+    color: white;
+}
+
+.wrong h1 {
+    font-family: 'myriad pro bold condensed';
+    font-size: 2.5rem !important;
+    margin: 2% !important;
+    color: black;
+    transform: none;
+}
+
+.wrong h2 {
+    font-family: 'myriad pro condensed';
+    color: black;
+    transform: none;
 }
 
 h1, h2 {
     text-align: center;
+    transform: rotateZ(-1deg);
+}
+
+.backgroundContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+}
+
+.filmBackground {
+    background-image: url('assets/pictures/test.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 0.1%; 
+}
+
+.footerParagraph {
+    font-family: 'myriad pro condensed';
+    font-size: 1.3rem !important;
+}
+
+.footerParagraph strong {
+    font-family: 'myriad pro bold condensed';
+}
+
+.bold {
+    font-family: 'myriad pro bold condensed';
 }
 
 .victoryPage {
-    background-color: rgb(59, 96, 219);
+    background-color: black;
     color: white;
+}
+
+.victoryPage .filmBackground {
+    padding-top: 3%;
+}
+
+.victoryPage h2 {
+    font-family: 'myriad pro condensed';
+    transform: none;
 }
 
 .paragraphContainer {
@@ -22,21 +115,29 @@ h1, h2 {
 .paragraph {
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'myriad pro condensed';
 }
 
 .buttonContainer {
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 .buttonLink {
     transition: all 0.3s;
     font-size: 1.1rem !important;
+    font-family: 'myriad pro bold condensed';
+    background-color: gold !important;
+    border-color: gold !important;
+    color: black !important;
 }
 
 .buttonLink:hover {
-    box-shadow: 1px 1px 5px grey;
+    background-color: orange !important;
+    border-color: orange !important;
+    color: white !important;
     transition: all 0.3s;
 }
 
@@ -104,7 +205,7 @@ h1, h2 {
   }
 
   .imageGallery {
-      max-height: 50vh;
+      
       overflow: auto;
   }
 
@@ -113,7 +214,7 @@ h1, h2 {
   }
 
   .galleryPic:hover {
-      box-shadow: 1px 1px 5px grey;
+      background-color: rgba(0, 0, 0, 0.3);
       transition: all 0.5s;
       cursor: pointer;
   }
@@ -132,7 +233,8 @@ h1, h2 {
 
   .blockWindow p {
     text-align: center;
-    font-size: 1.2rem;
+    font-family: 'myriad pro bold condensed';
+    font-size: 2rem;
     font-weight: bold;
   }
 
@@ -195,6 +297,19 @@ h1, h2 {
       /*animation: dash 30s linear forwards;*/
   }
 
+  footer p {
+      margin: auto;
+      text-align: center;
+  }
+
+  .credits h3 {
+    font-size: 1rem;
+  }
+
+  .credits p {
+      text-align: left;
+  }
+
   @keyframes dash {
       to {
 
@@ -204,11 +319,40 @@ h1, h2 {
   }
 
 @media(min-width: 992px) {
+
+    body {
+        padding-top: 2%;
+    }
+
+    h1 {
+        font-size: 8rem !important;
+        padding-top: 1%;
+    }
+
+    h2 {
+        font-size: 2.2rem !important;
+    }
+
+    .homepage h2 {
+        font-size: 2rem !important;
+    }
+
     .paragraphContainer {
         margin-top: 5%;
     }
 
+    .paragraph {
+        font-size: 1.7rem !important;
+    }
+    .buttonLink {
+        font-size: 1.4rem !important;
+    }
+
     .unionBody {
         padding-bottom: 18vh;
+    }
+
+    .filmBackground {
+        height: 50vh;
     }
 }

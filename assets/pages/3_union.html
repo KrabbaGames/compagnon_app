@@ -11,22 +11,27 @@
 </head>
 
 <body class="unionBody">
-    <h1>Scene 2</h1>
-    <h2>Union Station</h2>
-    <div class="container-fluid row no-gutters mt-5 mb-2">
-        <div class="col-0 col-lg-3"></div>
-        <img id="metroMap" class="col-12 col-lg-6" src="../pictures/planmetro.jpg" alt="Plan du métro" onmousemove="zoom()" onmouseout="clearZoom()">
-        <div class="col-0 col-lg-3"></div>
+    <div class="filmBackground">
+        <h1>Scene 2</h1>
+        <h2>Union Station</h2>
     </div>
-    <div id="zoom">
-        <img id="zoomedPicture" src="../pictures/planmetro.jpg">
-    </div>
+    <div class="backgroundContainer">
+        <div class="container-fluid row no-gutters mt-5 mb-2">
+            <div class="col-0 col-lg-3"></div>
+            <img id="metroMap" class="col-12 col-lg-6" src="../pictures/planmetro.jpg" alt="Plan du métro"
+                onmousemove="zoom()" onmouseout="clearZoom()">
+            <div class="col-0 col-lg-3"></div>
+        </div>
+        <div id="zoom">
+            <img id="zoomedPicture" src="../pictures/planmetro.jpg">
+        </div>
 
-    <p class="paragraph mb-2">Which metro station was Bonnie Wilson's destination?</p>
+        <p class="paragraph mb-2">Which metro station was Bonnie Wilson's destination?</p>
 
-    <div class="formContainer">
-        <input id="unionAnswer" type="text">
-        <input type="submit" class="btn btn-primary" value="Submit" onClick="unionQuestion()">
+        <div class="formContainer">
+            <input id="unionAnswer" type="text">
+            <input type="submit" class="btn btn-primary buttonLink" value="Validate" onClick="unionQuestion()">
+        </div>
     </div>
 
     <div id="modal" class="modal">
@@ -36,9 +41,9 @@
                 <div class="col-12 col-md-2 d-flex justify-content-center">
                     <img src="../pictures/icons/smiley_bad.svg">
                 </div>
-                <div class="col-12 col-md-8">
-                    <h1>Nope!</h1>
-                    <h2>This is not the right station.</h2>
+                <div class="col-12 col-md-8 wrong">
+                    <h1>That's the wrong station.</h1>
+                    <h2>Have another go!</h2>
                 </div>
                 <div class="col-12 col-md-2 d-flex justify-content-center">
                     <img src="../pictures/icons/smiley_bad.svg">

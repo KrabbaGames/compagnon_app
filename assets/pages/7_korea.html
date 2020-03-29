@@ -11,22 +11,26 @@
 </head>
 
 <body>
-    <h1>Scene 4</h1>
-    <h2>Koreatown</h2>
-    <div class="container-fluid row no-gutters mt-5 mb-2">
-        <div class="col-0 col-lg-3"></div>
-        <video class="col-12 col-lg-6" controls>
-            <source src="../videos/guide.mp4">
-                Votre navigateur ne prend pas en charge les vidéos
-        </video>
-        <div class="col-0 col-lg-3"></div>
+    <div class="filmBackground">
+        <h1>Scene 4</h1>
+        <h2>Koreatown</h2>
     </div>
+    <div class="backgroundContainer">
+        <div class="container-fluid row no-gutters mt-5 mb-2">
+            <div class="col-0 col-lg-3"></div>
+            <video class="col-12 col-lg-6" controls>
+                <source src="../videos/guide.mp4">
+                Votre navigateur ne prend pas en charge les vidéos
+            </video>
+            <div class="col-0 col-lg-3"></div>
+        </div>
 
-    <p class="paragraph mb-2">Where did Bonnie Wilson go?</p>
+        <p class="paragraph mb-2">Where does Bonnie want to go?</p>
 
-    <div class="formContainer">
-        <input id="koreaAnswer" type="text">
-        <input type="submit" class="btn btn-primary" value="Submit" onClick="koreaQuestion()">
+        <div class="formContainer">
+            <input id="koreaAnswer" type="text">
+            <input type="submit" class="btn btn-primary buttonLink" value="Validate" onClick="koreaQuestion()">
+        </div>
     </div>
 
     <div id="modal" class="modal">
@@ -36,9 +40,9 @@
                 <div class="col-12 col-md-2 d-flex justify-content-center">
                     <img src="../pictures/icons/smiley_bad.svg">
                 </div>
-                <div class="col-12 col-md-8">
-                    <h1>Wrong answer.</h1>
-                    <h2>Did you get lost?</h2>
+                <div class="col-12 col-md-8 wrong">
+                    <h1>Oops, looks like you've taken a wrong turn.</h1>
+                    <h2>Try again!</h2>
                 </div>
                 <div class="col-12 col-md-2 d-flex justify-content-center">
                     <img src="../pictures/icons/smiley_bad.svg">

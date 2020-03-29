@@ -17,6 +17,7 @@ function blockWindow(count) {
 
             if (count == 0) {
                 clearInterval(x);
+                window.location.hash='';
                 blockWindow.style.display = 'none';
             }
             count--;
@@ -39,16 +40,16 @@ function unionQuestion() {
     let unionAnswer = document.getElementById('unionAnswer').value;
     unionAnswer = unionAnswer.toLowerCase();
 
-    if (unionAnswer == 'venice beach' || unionAnswer == 'venice beach ') {
-        window.location.href = '4_pre_venice.html';
+    if (unionAnswer == 'santa monica' || unionAnswer == 'santa monica ') {
+        window.location.href = '4_pre_monica.html';
     } else {
         modal.style.display = 'block';
     }
 }
 
-function veniceQuestion(answer) {
+function monicaQuestion(answer) {
 
-    if (answer == 9) { // Changer le numéro pour changer la bonne voiture (entre 1 et 15)
+    if (answer == 8) { // Changer le numéro pour changer la bonne voiture (entre 1 et 9)
         window.location.href = '6_pre_korea.html';
     } else {
         
@@ -125,7 +126,7 @@ function pageLoad() {
             alert('Nice try you smart one!');
             this.blockWindow(40); // Changer la valeur pour modifier le temps de pénalité (en secondes)
         } else {
-            console.log('Welcome good sir.');
-            console.log('(if you removed the hash, congrats, you\'re a goddamn genius! Geniuses aren\'t meant to wait anyway...');
+            console.log('Welcome good sir/lady.');
+            console.log('(if you removed the hash, congrats, you\'re a goddamn genius! Geniuses aren\'t meant to wait anyway...)');
         } 
 }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Scene 3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body onload="pageLoad()">
+    <div class="filmBackground">
+        <h1>Scene 3</h1>
+        <h2>Santa Monica</h2>
+    </div>
+    <div class="backgroundContainer">
+        <div class="container-fluid row no-gutters mt-5 mb-2">
+            <img class="col-12 col-lg-4" src="../pictures/iphone_texto.jpg" alt="texto">
+            <div class="col-12 col-lg-8 container-fluid row no-gutters w-75 m-auto mb-5 imageGallery">
+                <p class="col-12 paragraph mb-2">Which car will you follow?</p>
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car1.jpg" alt="car1"
+                    onclick="monicaQuestion(1)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car2.jpg" alt="car2"
+                    onclick="monicaQuestion(2)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car3.jpg" alt="car3"
+                    onclick="monicaQuestion(3)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car4.jpg" alt="car4"
+                    onclick="monicaQuestion(4)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car5.jpg" alt="car5"
+                    onclick="monicaQuestion(5)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car6.jpg" alt="car6"
+                    onclick="monicaQuestion(6)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car7.jpg" alt="car7"
+                    onclick="monicaQuestion(7)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car8.jpg" alt="car8"
+                    onclick="monicaQuestion(8)">
+                <img class="col-12 col-sm-6 col-md-4 p-2 galleryPic" src="../pictures/car9.jpg" alt="car9"
+                    onclick="monicaQuestion(9)">
+            </div>
+        </div>
+        <footer class="credits">
+            <h3>Crédits images:</h3>
+            <p>bilanol/ Adobe Stock ; Suriyo/Adobe Stock ; Marc Xavier/Adobe
+                Stock ; Coolimages Co/Adobe Stock ; Yuri Bizgaimer/Adobe Stock ; Roberto
+                Gennaro/iStock ; Serega/iStock ; kulikov922/Adobe Stock</p>
+        </footer>
+    </div>
+
+
+    <div id="modal" class="modal">
+        <div class="modalContent lost">
+            <span id="closeIcon" class="close">&times;</span>
+            <div class="container-fluid no-gutters row">
+                <div class="col-12 col-md-2 d-flex justify-content-center">
+                    <img src="../pictures/icons/smiley_bad.svg">
+                </div>
+                <div class="col-12 col-md-8 wrong">
+                    <h1>You've followed the wrong car.</h1>
+                    <h2>Look again.</h2>
+                </div>
+                <div class="col-12 col-md-2 d-flex justify-content-center">
+                    <img src="../pictures/icons/smiley_bad.svg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="blockWindow" class="container-fluid pt-5 blockWindow">
+        <div class="row no-gutters mt-5 mb-3">
+            <div class="col-4 col-md-5"></div>
+            <div class="col-4 col-md-2 container row no-gutters">
+                <div class="col-0 col-lg-3"></div>
+                <img class="col-12 col-lg-6" src="../pictures/icons/alert.svg" alt="alert">
+                <div class="col-0 col-lg-3"></div>
+            </div>
+            <div class="col-4 col-md-5"></div>
+        </div>
+
+        <p class="col-12 mt-5">Time penalty</p>
+        <div class="col-12 d-flex justify-content-center align-items-center position-relative">
+            <div class="col-12 container row no-gutters position-absolute">
+                <div class="col-4 col-md-5"></div>
+                <div class="col-4 col-md-2 container row no-gutters">
+                    <div class="col-0 col-lg-3"></div>
+                    <svg class="col-12 col-lg-6 countdownPath" width="100%" height="100%" viewBox="0 0 100 100">
+                        <path id="path" d="M23 49 a 25,25 0 1,0 50, 0 a 25,25 0 1,0 -50, 0" stroke="red"
+                            stroke-width="3px" fill="none" />
+                    </svg>
+                    <div class="col-0 col-lg-3"></div>
+                </div>
+                <div class="col-4 col-md-5"></div>
+            </div>
+            <div id="countdown" class="text-center pt-3">
+            </div>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
