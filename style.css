@@ -58,12 +58,10 @@ h2 {
 .wrong h2 {
     font-family: 'myriad pro condensed';
     color: black;
-    transform: none;
 }
 
 h1, h2 {
     text-align: center;
-    transform: rotateZ(-1deg);
 }
 
 .backgroundContainer {
@@ -78,6 +76,10 @@ h1, h2 {
     background-position: center;
     width: 100%;
     padding-top: 0.1%; 
+}
+
+.filmBackground h1, .filmBackground h2 {
+    transform: rotateZ(-1deg);
 }
 
 .footerParagraph {
