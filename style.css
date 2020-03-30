@@ -72,7 +72,7 @@ h1, h2 {
 }
 
 .filmBackground {
-    background-image: url('assets/pictures/test.png');
+    background-image: url('assets/pictures/film_background.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
