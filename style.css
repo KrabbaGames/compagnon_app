@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     font-family: 'old typewriter';
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
 }
 
 .homepage h2 .bold {
@@ -378,6 +378,7 @@ footer p {
     .filmBackground {
         background-size: 150%;
         padding-top: 5%;
+        height: 270px;
     }
 
     .victoryPage h2 {
