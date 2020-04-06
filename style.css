@@ -218,6 +218,8 @@ h2 {
 
 .lost {
     background-image: url('assets/pictures/wrong_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .lost h1 {
@@ -346,12 +348,12 @@ footer p {
 
 
     h1 {
-        font-size: 5rem !important;
-        margin-top: 2% !important;
+        font-size: 4rem !important;
+        margin-top: 7% !important;
     }
 
     h2 {
-        font-size: 1.8rem !important;
+        font-size: 1.5rem !important;
     }
 
     .homepage h2 {
@@ -387,6 +389,23 @@ footer p {
 
     .victoryPage .filmBackground {
         padding-top: 8%;
+    }
+
+    .congrats {
+        font-size: 3.6rem !important;
+    }
+
+    
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 5rem !important;
+        margin-top: 2% !important;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
     }
 
     .congrats {
