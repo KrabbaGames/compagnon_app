@@ -24,6 +24,7 @@ body {
     background-size: 310%;
     background-position-x: 20%;
     background-color: black !important;
+    height: 100%;
 }
 
 h1 {
@@ -418,10 +419,11 @@ footer p {
     body {
         padding-top: 0;
         background-size: cover;
+        
     }
 
     h1 {
-        font-size: 8rem !important;
+        font-size: 7rem !important;
         margin-top: 5% !important;
     }
 
@@ -447,9 +449,10 @@ footer p {
     }
 
     .filmBackground {
-        background-size: 100%;
-        padding-top: 0.1%;
-        height: 470px;
+        background-size: 150%;
+        padding-top: 5% !important;
+        margin-bottom: 8%;
+        height: 380px;
     }
 
     .victoryPage h1 {
@@ -461,6 +464,18 @@ footer p {
     }
 
     .congrats {
+        font-size: 8rem !important;
+    }
+}
+
+@media(min-width: 1440px) {
+    .filmBackground {
+        background-size: 100%;
+        height: 450px;
+        padding-top: 0.8% !important;
+    }
+
+    h1 {
         font-size: 8rem !important;
     }
 }

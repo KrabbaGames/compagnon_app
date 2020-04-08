@@ -54,7 +54,7 @@ function monicaQuestion(answer) {
     } else {
         
         window.location.hash = 'pty';
-        this.blockWindow(30); // Changer la valeur pour modifier le temps de pénalité (en secondes)
+        this.blockWindow(60); // Changer la valeur pour modifier le temps de pénalité (en secondes)
 
     }
 
