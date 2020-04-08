@@ -464,7 +464,7 @@ footer p {
     }
 
     .congrats {
-        font-size: 8rem !important;
+        font-size: 6rem !important;
     }
 }
 
@@ -475,9 +475,18 @@ footer p {
         margin-top: 3% !important;
     }
 
+    .victoryPage h1 {
+        font-size: 7.5rem !important;
+        margin-top: 4.5% !important;
+    }
+
     .filmBackground {
         background-size: 100%;
         height: 450px;
+    }
+
+    .congrats {
+        font-size: 8rem !important;
     }
 }
 
@@ -486,6 +495,11 @@ footer p {
     h1 {
         font-size: 8rem !important;
         margin-top: 0 !important;
+    }
+
+    .victoryPage h1 {
+        font-size: 8rem !important;
+        margin-top: 2.5% !important;
     }
 }
 
