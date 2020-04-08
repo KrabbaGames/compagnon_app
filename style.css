@@ -414,6 +414,21 @@ footer p {
     }
 }
 
+@media(min-width: 850px) {
+
+    h1 {
+        font-size: 6rem !important;
+    }
+    
+    .victoryPage h1 {
+        font-size: 5.5rem !important;
+    }
+    .filmBackground {
+        height: 320px;
+        padding-top: 8% !important;
+    }
+}
+
 @media(min-width: 992px) {
 
     body {
@@ -445,7 +460,7 @@ footer p {
 
     .buttonLink {
         font-size: 2rem !important;
-        padding: 0.5% !important;
+        overflow-wrap: normal;
     }
 
     .filmBackground {
