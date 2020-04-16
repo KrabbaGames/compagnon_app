@@ -331,10 +331,39 @@ footer p {
 
 .credits p {
     text-align: left;
+    font-size: 0.8rem;
 }
 
 .congrats {
     font-size: 2.3rem !important;
+}
+
+.newStar {
+    filter: invert(88%) sepia(34%) saturate(2093%) hue-rotate(345deg) brightness(101%) contrast(96%);
+    transition: all 0.5s;
+}
+
+.starContainer {
+    position: relative;
+}
+
+.popingStar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    animation: 0.4s ease-out 0.5s forwards pop;
+}
+
+@keyframes pop {
+    from { 
+        transform: rotateZ(180deg) scale(0.01);
+        opacity: 0;
+    }
+    to { 
+        transform: rotateZ(0) scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes dash {
@@ -498,6 +527,7 @@ footer p {
     .filmBackground {
         background-size: 100%;
         height: 450px;
+        margin-bottom: 2%;
     }
 
     .congrats {
