@@ -198,7 +198,7 @@ h2 {
 }
 
 .close {
-    color: black !important;
+    color: white !important;
     float: right;
     font-size: 2.5rem !important;
     font-weight: bold;
@@ -207,7 +207,7 @@ h2 {
 
 .close:hover,
 .close:focus {
-    color: white !important;
+    color: red !important;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s;
@@ -218,7 +218,7 @@ h2 {
 }
 
 .lost {
-    background-image: url('assets/pictures/wrong_background.jpg');
+    background-image: url('assets/pictures/wrong_background_black.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -283,11 +283,6 @@ h2 {
 
 .winTitle+h2 {
     color: yellow;
-}
-
-#metroMap {
-    position: relative;
-    cursor: crosshair;
 }
 
 #zoom {
