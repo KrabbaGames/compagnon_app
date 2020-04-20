@@ -102,6 +102,10 @@ h2 {
     font-family: 'myriad pro bold condensed';
 }
 
+#answer {
+    margin-right: 2%;
+}
+
 .victoryPage {
     background-color: black;
     color: white;
@@ -369,6 +373,7 @@ footer p {
     }
 }
 
+/* Media queries */
 @media(min-width: 600px) {
 
 
@@ -393,8 +398,12 @@ footer p {
         font-size: 2.5rem !important;
     }
 
+    #answer {
+        margin-right: 1%;
+    }
+
     .buttonContainer {
-        margin-bottom: 1.5%;
+        margin-bottom: 1%;
     }
 
     .buttonLink {
@@ -463,7 +472,7 @@ footer p {
 
     h1 {
         font-size: 7rem !important;
-        margin-top: 5% !important;
+        margin-top: 3% !important;
     }
 
     h2 {
@@ -511,7 +520,7 @@ footer p {
 
     h1 {
         font-size: 7.5rem !important;
-        margin-top: 3% !important;
+        margin-top: 2% !important;
     }
 
     .victoryPage h1 {
@@ -520,9 +529,13 @@ footer p {
     }
 
     .filmBackground {
-        background-size: 100%;
+        background-size: 110%;
         height: 450px;
         margin-bottom: 2%;
+    }
+
+    #answer {
+        margin-right: 0.4%;
     }
 
     .congrats {
