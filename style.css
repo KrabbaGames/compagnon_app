@@ -27,6 +27,11 @@ body {
     height: 100%;
 }
 
+img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
 h1 {
     font-family: 'old typewriter';
     font-size: 3rem !important;
