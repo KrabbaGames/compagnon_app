@@ -27,9 +27,8 @@ body {
     height: 100%;
 }
 
-img {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+.container img {
+    align-items: flex-start !important;
 }
 
 h1 {
