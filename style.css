@@ -27,7 +27,7 @@ body {
     height: 100%;
 }
 
-.container img {
+.container {
     align-items: flex-start !important;
 }
 
