@@ -205,7 +205,7 @@ h2 {
     /* Could be more or less, depending on screen size */
 }
 
-.close {
+.wrongClose {
     color: white !important;
     float: right;
     font-size: 2.5rem !important;
@@ -213,8 +213,8 @@ h2 {
     transition: color 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.wrongClose:hover,
+.wrongClose:focus {
     color: red !important;
     text-decoration: none;
     cursor: pointer;
